@@ -10,6 +10,8 @@ Description: This OpenCart extension allows you to process credit card payments 
 
 Supported OpenCart Version(s): 1.5.5.1
 
+PLEASE SEE THE LICENSE FILE INCLUDED WITH THIS EXTENSION.
+
 === Release Notes ===
 v1.0 - July 20, 2014
   -Initial Release
@@ -48,3 +50,22 @@ To install, just copy the above files to their respective directories in you Ope
   -Save your settings.
 
 Now you should see PayHub as an option when checking out.
+
+=== Testing the PayHub Extension ===
+You can use the following card numbers to test the PayHub extension.  Please be sure that the "Transaction Mode" setting is set to "Test" for the PayHub extension before testing.
+
+Visa: 
+  -card #: 4266841082854082
+  -exp date: any date in the future
+  -CVV: 999
+  -billing address: any valid address
+  -Transaction amounts: $.01 for a failure and $10 for a successful result.
+
+MasterCard:
+  -card #: 5466410004374507
+  -exp date: any date in the future
+  -CVV: 998
+  -billing address: any valid address
+  -Transaction amounts: $.01 for a failure and $10 for a successful result.
+
+**Note:  When you are done testing and ready to go live, you must change the Transaction Mode value to "Live" in the PayHub Gateway extension settings page.  If you forget to do this and make your site live, then people may be able to run transactions through our test system and you will NOT be paid on those transactions!  You are advised to switch the account to "Live" and then test with your own card to verfiy everything is working correctly end-to-end.  You can then void the transaction via your Virtual Hub log in.
